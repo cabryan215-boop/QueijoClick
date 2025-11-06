@@ -1,0 +1,1 @@
+draw_text(x,y,"vida:"+string(global.queijo))
