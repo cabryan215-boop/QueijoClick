@@ -1,0 +1,2 @@
+instance_destroy(ObjGanho)
+instance_destroy(ObjDano)

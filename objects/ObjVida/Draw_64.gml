@@ -1,1 +1,1 @@
-draw_text(x,y,"50000/"+string(global.queijo))
+draw_text(x,y,string(global.queijo)+"/50000")

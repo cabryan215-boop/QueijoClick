@@ -1,6 +1,6 @@
 global.queijo=50000
 global.dinheiro=0
-ganho=1
-
-dano=1
+global.ganho=1
+global.dano=1
 spr=false
+cu=true
