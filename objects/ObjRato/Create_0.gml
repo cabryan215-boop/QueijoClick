@@ -4,4 +4,5 @@ tempo=1
 pode=false
 
 direcao = 1
-a=global.dinheiro * 0.20
+global.kikuBranco=0.10
+a=global.dinheiro * global.kikuBranco

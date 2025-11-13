@@ -1,0 +1,1 @@
+global.kikuBranco = 0.10

@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr",
-    "path":"sprites/Spr/Spr.yy",
+    "name":"SprMouse",
+    "path":"sprites/SprMouse/SprMouse.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,3 +1,4 @@
+a=global.dinheiro * global.kikuBranco
 x += velocidade * direcao
 
 if x > room_width{
