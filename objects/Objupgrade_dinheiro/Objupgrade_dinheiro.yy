@@ -10,8 +10,8 @@
   "name":"Objupgrade_dinheiro",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Upgrades",
+    "path":"folders/Objects/Upgrades.yy",
   },
   "parentObjectId":null,
   "persistent":false,
