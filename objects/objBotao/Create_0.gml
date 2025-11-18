@@ -4,12 +4,12 @@ global.botaoAtual = 0
 //vida dos botoes
 global.queijo=[50000,500000,6000000]
 //quantidade de dinheiro
-global.dinheiro= 500000000
+global.dinheiro= 150
 //ganho de dinhiro inicial de cada botao
 global.ganho=[1,1.80,3.0]
 
 //Multiplicador de dinheiro para ambos os botões
-global.dinheiroGanho = 1
+global.dinheiroGanho = 50
 
 //dano causado no botao
 global.dano=1

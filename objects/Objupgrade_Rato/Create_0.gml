@@ -1,2 +1,2 @@
 global.precoUpRato=150
-mult2=3
+global.multRato=3

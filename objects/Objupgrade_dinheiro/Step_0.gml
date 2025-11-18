@@ -3,7 +3,7 @@ if place_meeting(x,y,ObjMouse){
 		if global.dinheiro>=global.precoUpdinheiro{
 			global.dinheiro -= global.precoUpdinheiro
 			global.dinheiroGanho *= global.mult
-			global.precoUpdinheiro*=mult2
+			global.precoUpdinheiro*=global.multDinheiro
 			
 		}
 	}
