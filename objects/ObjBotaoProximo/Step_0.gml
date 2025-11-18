@@ -8,7 +8,7 @@ if place_meeting(x,y,ObjMouse){
 		//Se está no último botao
 		if global.botaoAtual >=  global.botaoMaximo{
 			//Volta parav o porimeiro
-			global.botaoAtual = 0
+			global.botaoAtual = global.botaoMinimo
 		}
 		else{
 			global.botaoAtual++

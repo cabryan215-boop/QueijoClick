@@ -2,11 +2,11 @@
 global.botaoAtual = 0
 
 //vida dos botoes
-global.queijo=[50000,500000]
+global.queijo=[50000,500000,6000000]
 //quantidade de dinheiro
 global.dinheiro= 500000000
 //ganho de dinhiro inicial de cada botao
-global.ganho=[1,1.80]
+global.ganho=[1,1.80,3.0]
 
 //Multiplicador de dinheiro para ambos os botões
 global.dinheiroGanho = 1
@@ -34,24 +34,26 @@ global.NivelAtual=1
 global.Xp=0
 //a quantidade de xp nessesaria 
 global.xpNecessaria = 10
-global.xpPreciso=[0,10]
+global.xpPreciso=[0,10,25]
 
 //Xp ganho por botao
-global.ganhoXP = [2, 10]
+global.ganhoXP = [2, 10,20]
 
 
 
 //Vida atual do botao
-global.vidaAtual = [50000, 500000]
+global.vidaAtual = [50000, 500000,6000000]
 
 //Vida maxima quando destruir o botao
-global.vidaTotal = [50000, 500000]
+global.vidaTotal = [50000, 500000,6000000]
 
 //Matriz dos sprites
 global.botaoEscolhido = [
 						[sprQueijo, sprQueijoClicando, SprqueijoClick],
-						[SprBotao2, SprBotaoClicando, SprBotaoCrit]
+						[SprBotao2, SprBotaoClicando, SprBotaoCrit],
+						[SprBotao3,sprBotaoClicando3,Sprbotaocrit3]
 						]
+						
 
 
 
@@ -59,7 +61,7 @@ global.botaoEscolhido = [
 global.botaoMinimo = 0
 
 //O maior valor de botão
-global.botaoMaximo = 1
+global.botaoMaximo = 2
 
 //Habilita o menor botao
 
@@ -69,3 +71,6 @@ if global.NivelAtual < global.xpPreciso[global.botaoAtual]{
 else{
 	global.isHabilatado = true
 }
+
+//Lista de placas de botao não disponivel
+botaoIndisponivel = [sprQueijo, SprBotaoIndisponivel, SprBotaoIndisponivel25]

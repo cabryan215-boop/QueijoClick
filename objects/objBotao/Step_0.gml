@@ -1,11 +1,12 @@
 if ! global.isHabilatado{
-	sprite_index = SprBotaoIndisponivel
+	sprite_index = botaoIndisponivel[global.botaoAtual]
 	exit
 }
 
 global.ai=global.dano * 5
 global.ae= global.ganho[global.botaoAtual] * global.dinheiroGanho * 5
 if mouse_check_button_pressed(mb_left) and place_meeting(x,y,ObjMouse){
+	//Muda para a aparencia de ser clicado
 	sprite_index=global.botaoEscolhido[global.botaoAtual][1]
 	
 	instance_create_layer(mouse_x+10,mouse_y+10,"instances",ObjDano)
@@ -16,6 +17,7 @@ if mouse_check_button_pressed(mb_left) and place_meeting(x,y,ObjMouse){
 	if numale <=global.kikupreto{
 		global.danoDado = global.ai
 		global.dinheiroRecebido = global.ae 
+		//Faz o sprite ficar com a aparencia de critico
 		sprite_index= global.botaoEscolhido[global.botaoAtual][2]
 		
 	}
@@ -39,12 +41,13 @@ if mouse_check_button_pressed(mb_left) and place_meeting(x,y,ObjMouse){
 	}
 	
 	if global.Xp>=global.xpNecessaria{
-		global.xpNecessaria*=1.5
+		global.xpNecessaria*=1.1
 		global.Xp=0
 		global.NivelAtual+=1
 	
 	}	
 }
 else{
+	//Fica com a aparencia normal
 	sprite_index= global.botaoEscolhido[global.botaoAtual][0]
 }
