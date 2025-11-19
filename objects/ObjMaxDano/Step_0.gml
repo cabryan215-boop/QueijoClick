@@ -3,5 +3,16 @@ multiplicador = global.multDano
 
 if compra{
 	compra = false
-	global.precoUpDano = custo
+	
+
+	
+	global.precoUpDano = novoPreco
+	
+	
+	i = 0
+	while i < quantCompras{
+		global.dano *=  global.mult 
+		i ++
+	}
+	
 }
