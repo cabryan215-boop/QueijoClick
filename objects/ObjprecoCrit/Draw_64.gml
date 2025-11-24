@@ -5,7 +5,7 @@ if global.kikupreto < global.upgradeCritMaximo{
 	draw_text(x,y,"\nchance de \ncritico\n\n+5"+"\n\n\n\n\n\n\n"+arredondarNum(global.precoUpcrit)+"$" )
 }
 else{
-	draw_text(x,y,"\nchance de \ncritico\n\n+5"+"\n\n\n\n\n\n\n Compra maxima feita" )
+	draw_text(x,y,"\nchance de \ncritico\n\n+5"+"\n\n\n\n\n\n\n max" )
 }
 
 

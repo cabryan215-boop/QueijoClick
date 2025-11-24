@@ -6,7 +6,7 @@ function salvarJogo(){
 	ini_write_real("Nivel","quantXp",global.Xp)
 	ini_write_real("Botao","botaoSelect",global.botaoAtual)
 	ini_write_real("Dano","DanoAtual",global.dano)
-	ini_write_real("Custo","custoAtual",global.custo)
+	//ini_write_real("Custo","custoAtual",global.custo)
 	ini_write_real("Dinheiro","DinheiroTotal",global.dinheiro)
 	ini_write_real("Dinheiro","QuantGanha",global.dinheiroGanho)
 	ini_write_real("dinheiro","dinheiroRecebido",global.dinheiroRecebido)
@@ -23,11 +23,13 @@ function salvarJogo(){
 	//Salvando vetores
 
 	while i < global.botaoMaximo{
-		ini_write_real("VidaBotoes", "vidaAtualBotao" + i, global.vidaAtual[i])
-		ini_write_real("quant","Xp" + i, global.ganhoXP[i])
-		ini_write_real("quant","Ganho" + i, global.ganho[i])
-		ini_write_real("quant","Vida" + i, global.queijo[i])
-		ini_write_real("quant","XpPreciso" + i, global.xpPreciso[i])
+		ini_write_real("VidaBotoes", "vidaAtualBotao" + string(i), global.vidaAtual[i])
+		ini_write_real("quant","Xp" +string(i), global.ganhoXP[i])
+		ini_write_real("quant","Ganho" + string(i), global.ganho[i])
+		ini_write_real("quant","Vida" + string(i), global.queijo[i])
+		ini_write_real("quant","XpPreciso" + string(i), global.xpPreciso[i])
+		
+	
 		i ++
 	}
 	
@@ -35,7 +37,7 @@ function salvarJogo(){
 }
 
 //Função para carregar os dados salvos
-/*function carregarJogo(){
+function carregarJogo(){
 	ini_open("save.ini")
 	
 	
@@ -43,8 +45,8 @@ function salvarJogo(){
 	global.xpAtual=ini_read_real("Nivel","quantXp",global.Xp)
 	global.BotaoAtual=ini_read_real("Botao","botaoSelect",0)
 	global.danoTotal=ini_read_real("Dano","DanoAtual",global.dano)
-	global.custototal=ini_read_real("Custo","custoAtual",global.custo)
-	global.dinheiroTotal=ini_read_real("Dinheiro","DinheiroTotal",global.dinheiro)
+	//global.custototal=ini_read_real("Custo","custoAtual",global.custo)
+	global.dinheiro=ini_read_real("Dinheiro","DinheiroTotal",0)
 	global.DinheiroGanhoTotal=ini_read_real("Dinheiro","QuantGanha",global.dinheiroGanho)
 	global.DinheiroRecebido=ini_read_real("dinheiro","dinheiroRecebido",global.dinheiroRecebido)
 	global.KIkubrancoatual=ini_read_real("Chance","Torreta",global.kikuBranco)
@@ -53,20 +55,24 @@ function salvarJogo(){
 	global.PrecoUpCritAtual=ini_read_real("Preço","upCrit",global.precoUpcrit)
 	global.PrecoUpRatoAtual=ini_read_real("Preço","upRato",global.precoUpRato)
 	global.PrecoUpDinheiroAtual=ini_read_real("Preço","upDinheiro",global.precoUpdinheiro)
-	globalini_read_real("Quant","QuantBotaoDestroi",global.quantiBotaoDestruidos)
-	ini_read_real("Quant","QuantXpNessesario",global.xpNecessaria)
+	global.quantBlocoDestruidoTotal=ini_read_real("Quant","QuantBotaoDestroi",global.quantiBotaoDestruidos)
+	global.QuantXpNessesarioAtual=ini_read_real("Quant","QuantXpNessesario",global.xpNecessaria)
 	
 	i = 0
 	//Salvando vetores
-
+	
 	while i < global.botaoMaximo{
-		global.vidaAtual[i] = ini_read_real("VidaBotoes", "vidaAtualBotao" + i, global.vidaTotal[i])
-		global.xp[i]=ini_read_real("quant","Xp" + i, global.ganhoXP[i])
-		global.GanhoTotal[i]=ini_read_real("quant","Ganho" + i, global.ganho[i])
-		ini_read_real("quant","Vida" + i, global.queijo[i])
-		global.xpTotal[i]=ini_read_real("quant","XpPreciso" + i, global.xpPreciso[i])
+		
+		
+		global.vidaAtual[i] = ini_read_real("VidaBotoes", "vidaAtualBotao" + string(i), global.vidaTotal[i])
+		global.xp[i]=ini_read_real("quant","Xp" + string(i), global.ganhoXP[i])
+		global.GanhoTotal[i]=ini_read_real("quant","Ganho" + string(i), global.ganho[i])
+		global.vida=ini_read_real("quant","Vida" + string(i), global.queijo[i])
+		global.xpTotal[i]=ini_read_real("quant","XpPreciso" + string(i), global.xpPreciso[i])
+	
+	
 		i ++
 	}
 	
 	ini_close();
-}*/
+}
