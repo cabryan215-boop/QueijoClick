@@ -3,13 +3,13 @@ global.botaoAtual = 0
 
 
 //vida dos botoes
-global.queijo=[50000,500000,6000000,15000000]
+global.queijo=[100000,100000000,1000000000,10500000000]
 //quantidade de dinheiro
 global.dinheiro=0
 //ganho de dinhiro inicial de cada botao
-global.ganho=[1,1.80,3.0,4.5]
+global.ganho=[1, 1.8, 2.5, 3.5]
 
-//Multiplicador de dinheiro para ambos os botões
+//Multiplicador de dinheiro para todos os botões
 global.dinheiroGanho = 1
 
 //dano causado no botao
@@ -21,8 +21,8 @@ global.kikupreto=1
 //chnace de critico
 numale=irandom_range(global.kikupreto,100)
 //multiplicadores da torreta
-global.ai=global.dano * 5
-global.ae=global.ganho[global.botaoAtual] * 5
+//global.ai=global.dano * 5
+//global.ae=global.ganho[global.botaoAtual] * 5
 //qunatidade de dano que o botao tera recebido
 global.danoDado = global.dano
 //
@@ -43,10 +43,10 @@ global.ganhoXP = [2, 10,20,35]
 
 
 //Vida atual do botao
-global.vidaAtual = [50000, 500000,6000000,15000000]
+global.vidaAtual = [10000000,100000000,1000000000,10500000000]
 
 //Vida maxima quando destruir o botao
-global.vidaTotal = [50000, 500000,6000000,15000000]
+global.vidaTotal = [10000000,100000000,1000000000,10500000000]
 
 //Matriz dos sprites
 global.botaoEscolhido = [

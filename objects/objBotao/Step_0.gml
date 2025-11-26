@@ -4,13 +4,12 @@ if ! global.isHabilatado{
 }
 
 global.ai=global.dano * 5
-global.ae= global.ganho[global.botaoAtual] * global.dinheiroGanho * 5
+global.ae= global.ganho[global.BotaoAtual] * global.dinheiroGanho * 5
+
 if mouse_check_button_pressed(mb_left) and place_meeting(x,y,ObjMouse){
 	//Muda para a aparencia de ser clicado
 	sprite_index=global.botaoEscolhido[global.botaoAtual][1]
 	
-	instance_create_layer(mouse_x+10,mouse_y+10,"instances",ObjDano)
-	instance_create_layer(mouse_x,mouse_y,"instances",ObjGanho)
 	
 	numale=irandom_range(1,100)
 	
@@ -23,7 +22,7 @@ if mouse_check_button_pressed(mb_left) and place_meeting(x,y,ObjMouse){
 	}
 	else{
 		global.danoDado = global.dano 
-		global.dinheiroRecebido = global.ganho[global.botaoAtual] * global.dinheiroGanho
+		global.dinheiroRecebido = global.ganho[global.BotaoAtual] * global.dinheiroGanho
 		
 	}
 	
@@ -46,6 +45,10 @@ if mouse_check_button_pressed(mb_left) and place_meeting(x,y,ObjMouse){
 		global.NivelAtual+=1
 	
 	}	
+	
+	instance_create_layer(mouse_x+10,mouse_y+10,"instances",ObjDano)
+	instance_create_layer(mouse_x,mouse_y,"instances",ObjGanho)
+	
 }
 else{
 	//Fica com a aparencia normal

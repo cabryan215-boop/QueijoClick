@@ -12,7 +12,7 @@ if x < - 100{
 }
 if place_meeting(x,y,ObjMouse){
 	if mouse_check_button_pressed(mb_left){
-		instance_destroy(ObjRato)
+		instance_destroy()
 		global.dinheiro+=a
 	}
 }	
